@@ -2,3 +2,7 @@ MDAnalysis
 nglview
 MDAnalysisTests
 seaborn
+highcharts-core
+highcharts-stock
+highcharts-gantt
+highcharts-maps

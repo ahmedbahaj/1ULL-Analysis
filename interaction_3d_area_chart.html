@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>3D Molecular Interaction Dynamics</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+</head>
+<body>
+    <div id="container" style="width:100%; height:1000px;"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+Highcharts.chart('container',
+{
+  chart: {
+  height: 1000,
+  margin: [null,
+80,
+null,
+null],
+  marginRight: 80,
+  options3d: {
+  alpha: 15,
+  beta: 20,
+  depth: 180,
+  enabled: true
+},
+  type: 'area'
+},
+  series: [{
+  data: [[1,
+0],
+[2,
+0],
+[3,
+1],
+[4,
+0],
+[5,
+0],
+[6,
+0],
+[7,
+0]],
+  name: 'Number of Anion-π interactions',
+  tooltip: {
+  pointFormat: '<b>{series.name}</b><br>Frame: {point.x}<br>Count: {point.y}'
+},
+  type: 'area'
+},
+{
+  data: [[1,
+3],
+[2,
+3],
+[3,
+2],
+[4,
+4],
+[5,
+5],
+[6,
+3],
+[7,
+2]],
+  name: 'Number of Apolar vdW contacts',
+  tooltip: {
+  pointFormat: '<b>{series.name}</b><br>Frame: {point.x}<br>Count: {point.y}'
+},
+  type: 'area'
+},
+{
+  data: [[1,
+16],
+[2,
+13],
+[3,
+14],
+[4,
+19],
+[5,
+23],
+[6,
+23],
+[7,
+16]],
+  name: 'Number of CH-O/N bonds',
+  tooltip: {
+  pointFormat: '<b>{series.name}</b><br>Frame: {point.x}<br>Count: {point.y}'
+},
+  type: 'area'
+},
+{
+  data: [[1,
+2],
+[2,
+2],
+[3,
+1],
+[4,
+3],
+[5,
+3],
+[6,
+3],
+[7,
+4]],
+  name: 'Number of CH-π interactions',
+  tooltip: {
+  pointFormat: '<b>{series.name}</b><br>Frame: {point.x}<br>Count: {point.y}'
+},
+  type: 'area'
+},
+{
+  data: [[1,
+1],
+[2,
+1],
+[3,
+1],
+[4,
+0],
+[5,
+0],
+[6,
+1],
+[7,
+1]],
+  name: 'Number of Cation-π interactions',
+  tooltip: {
+  pointFormat: '<b>{series.name}</b><br>Frame: {point.x}<br>Count: {point.y}'
+},
+  type: 'area'
+},
+{
+  data: [[1,
+1],
+[2,
+3],
+[3,
+0],
+[4,
+1],
+[5,
+1],
+[6,
+3],
+[7,
+3]],
+  name: 'Number of Clashes',
+  tooltip: {
+  pointFormat: '<b>{series.name}</b><br>Frame: {point.x}<br>Count: {point.y}'
+},
+  type: 'area'
+},
+{
+  data: [[1,
+12],
+[2,
+9],
+[3,
+10],
+[4,
+11],
+[5,
+10],
+[6,
+10],
+[7,
+10]],
+  name: 'Number of H-bonds',
+  tooltip: {
+  pointFormat: '<b>{series.name}</b><br>Frame: {point.x}<br>Count: {point.y}'
+},
+  type: 'area'
+},
+{
+  data: [[1,
+31],
+[2,
+36],
+[3,
+25],
+[4,
+25],
+[5,
+30],
+[6,
+28],
+[7,
+28]],
+  name: 'Number of Proximal contacts',
+  tooltip: {
+  pointFormat: '<b>{series.name}</b><br>Frame: {point.x}<br>Count: {point.y}'
+},
+  type: 'area'
+},
+{
+  data: [[1,
+16],
+[2,
+14],
+[3,
+16],
+[4,
+18],
+[5,
+16],
+[6,
+17],
+[7,
+18]],
+  name: 'Number of Salt-bridges',
+  tooltip: {
+  pointFormat: '<b>{series.name}</b><br>Frame: {point.x}<br>Count: {point.y}'
+},
+  type: 'area'
+},
+{
+  data: [[1,
+0],
+[2,
+1],
+[3,
+0],
+[4,
+1],
+[5,
+1],
+[6,
+0],
+[7,
+0]],
+  name: 'Number of lp-π interactions',
+  tooltip: {
+  pointFormat: '<b>{series.name}</b><br>Frame: {point.x}<br>Count: {point.y}'
+},
+  type: 'area'
+}],
+  subtitle: {
+  text: '3D Area chart showing 10 interaction types with non-zero values over 7 simulation frames.'
+},
+  title: {
+  style: {'fontSize': '22px', 'fontWeight': 'bold'},
+  text: '3D Molecular Interaction Dynamics (Frames 1-7)'
+}
+},
+);
+});
+    </script>
+</body>
+</html>
