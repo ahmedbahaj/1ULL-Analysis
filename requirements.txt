@@ -1,0 +1,4 @@
+MDAnalysis
+nglview
+MDAnalysisTests
+seaborn
