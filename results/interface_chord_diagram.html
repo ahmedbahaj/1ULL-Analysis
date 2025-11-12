@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Interface Chord Diagram</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/sankey.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+</head>
+<body>
+    <div id="container" style="width:100%; height:700px;"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+Highcharts.chart('container',
+{
+  chart: {
+  height: 700,
+  type: 'sankey'
+},
+  series: [{
+  data: [{
+  weight: 13,
+  from: 'Residue_41',
+  to: 'Residue_58'
+},
+{
+  weight: 41,
+  from: 'Residue_48',
+  to: 'Residue_68'
+},
+{
+  weight: 23,
+  from: 'Residue_15',
+  to: 'Residue_59'
+},
+{
+  weight: 79,
+  from: 'Residue_44',
+  to: 'Residue_98'
+},
+{
+  weight: 64,
+  from: 'Residue_6',
+  to: 'Residue_88'
+},
+{
+  weight: 21,
+  from: 'Residue_3',
+  to: 'Residue_52'
+},
+{
+  weight: 74,
+  from: 'Residue_14',
+  to: 'Residue_65'
+},
+{
+  weight: 81,
+  from: 'Residue_39',
+  to: 'Residue_52'
+},
+{
+  weight: 93,
+  from: 'Residue_13',
+  to: 'Residue_96'
+},
+{
+  weight: 63,
+  from: 'Residue_45',
+  to: 'Residue_85'
+},
+{
+  weight: 85,
+  from: 'Residue_15',
+  to: 'Residue_79'
+},
+{
+  weight: 30,
+  from: 'Residue_18',
+  to: 'Residue_51'
+},
+{
+  weight: 53,
+  from: 'Residue_45',
+  to: 'Residue_78'
+},
+{
+  weight: 37,
+  from: 'Residue_18',
+  to: 'Residue_60'
+},
+{
+  weight: 23,
+  from: 'Residue_49',
+  to: 'Residue_72'
+},
+{
+  weight: 22,
+  from: 'Residue_6',
+  to: 'Residue_75'
+},
+{
+  weight: 87,
+  from: 'Residue_23',
+  to: 'Residue_73'
+},
+{
+  weight: 68,
+  from: 'Residue_17',
+  to: 'Residue_53'
+},
+{
+  weight: 58,
+  from: 'Residue_35',
+  to: 'Residue_58'
+},
+{
+  weight: 47,
+  from: 'Residue_6',
+  to: 'Residue_86'
+}],
+  name: 'Number of Proximal contacts Residue Connectivity',
+  dataLabels: {
+  enabled: true
+},
+  showInLegend: false,
+  tooltip: {
+  pointFormat: '<span style="color:{point.color}">{point.from}</span> → <span style="color:{point.color}">{point.to}</span>: <b>{point.weight}</b>'
+},
+  type: 'sankey'
+}],
+  subtitle: {
+  text: 'Number of Proximal contacts contact frequencies between residues (Fragment_A: 1-50, Fragment_B: 51-100)'
+},
+  title: {
+  text: 'Simulated Residue Interface Chord Diagram'
+},
+  tooltip: {
+  useHTML: true
+}
+},
+);
+});
+    </script>
+</body>
+</html>

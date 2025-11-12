@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Interaction Time Traces</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+</head>
+<body>
+    <div id="container" style="width:100%; height:700px;"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+Highcharts.chart('container',
+{
+  chart: {
+  height: 700,
+  type: 'spline'
+},
+  series: [{
+  data: [[31],
+[36],
+[25],
+[25],
+[30],
+[28],
+[28]],
+  name: 'Number of Proximal contacts',
+  type: 'spline'
+},
+{
+  data: [[16],
+[13],
+[14],
+[19],
+[23],
+[23],
+[16]],
+  name: 'Number of CH-O/N bonds',
+  type: 'spline'
+},
+{
+  data: [[16],
+[14],
+[16],
+[18],
+[16],
+[17],
+[18]],
+  name: 'Number of Salt-bridges',
+  type: 'spline'
+},
+{
+  data: [[12],
+[9],
+[10],
+[11],
+[10],
+[10],
+[10]],
+  name: 'Number of H-bonds',
+  type: 'spline'
+},
+{
+  data: [[3],
+[3],
+[2],
+[4],
+[5],
+[3],
+[2]],
+  name: 'Number of Apolar vdW contacts',
+  type: 'spline'
+}],
+  subtitle: {
+  text: 'Frame-by-frame counts for the five most frequent interactions'
+},
+  title: {
+  text: 'Top Interactions Over Time'
+},
+  tooltip: {
+  headerFormat: '<span style="font-size: 10px">Frame {point.key}</span><br/>',
+  pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b><br/>',
+  shared: true
+}
+},
+);
+});
+    </script>
+</body>
+</html>
